@@ -1,0 +1,16 @@
+기본 git 명령어 와 사용법.
+
+cd (이동) 
+ls (목록)
+git init 
+git add 파일명
+git commit -m '작업내용'
+git remote origin "깃허브 주소'
+git push origin main 
+git pull origin main 
+git branch (브랜치목록)
+git branch '파일명' (브랜치추가)
+git checkout -b '브랜치명' (브랜치추가하면서 해당 브랜치로 이동)
+git checkout '브랜치명' (해당 브랜치로 브랜치 이동)
+git branch -d '브랜치명' (해당 브랜치 삭제)
+git merge '브랜치명' (현재 브랜치에 병합할 브랜치)
