@@ -6,18 +6,25 @@
     <title>Document</title>
 
     <style>
+        * {  margin: 15px; padding: 5px; font-size: 24px; background-color:white; color : gray; text-align: center;}
+        h1 { font-size: 60px; background-color:lightgreen; color: black; text-align: center; }
+        h3, p, span { font-size: 20px; color:darkgreen;}
 
+        .list { font-size: 40px; color:darkorange; text-align: center; margin-left: 20%; margin-right: 20%;}
+        .list li { font-size: 35px; color:orange; text-align: center; margin-left: 30%; margin-right: 30%; }
 
+        a:link { color:blue; }
+        a:visited { color:purple; }
 
+        a:hover { color:cyan; }
+        a:active { color:red; }
 
+        .in {font-size: 35px; color:black }
 
-
-
-
-
-
-
-
+        #ct { border: 5px solid; color:black; }
+        .tb { border: 2px solid; color:black; }
+        table { border: 5px solid black; border-collapse: collapse; margin-left: 39%; }
+    
     </style>
 
 
@@ -28,7 +35,7 @@
 <body>
     <div>
         <h1>Hello, center!</h1>
-        <h4>주말숙제를 해봅시다</h4>
+        <h3>주말숙제를 해봅시다</h3>
     </div>
 
     <div>
@@ -48,13 +55,13 @@
     </div><br>
 
     <div>
-        <p>이제 순서를 정해볼건데요</p>
-        <ul>
+        <p class="list">이제 순서를 정해볼건데요</p>
+        <ul class="list">
             <li>순서가없는목록</li>
             <li>앞에 숫자가 아닌 점이 있네요.</li>
         </ul>
 
-        <ol>
+        <ol class="list">
             <li>순서가 있는 목록</li>
             <li>앞에 숫자가 있습니다.</li>
         </ol>
@@ -62,21 +69,64 @@
     </div>
 
     <div>
-        <p> input 적용해볼게요.</p>
+        <p class="in"> input 적용해볼게요.</p>
         <input type="text" value ="value를 쓰면 글이보이네요."><br>
         <input type="text" value ="아이디"><br>
         <input type="text" value ="비밀번호"><br>
-        <p> button 적용해볼게요.</p>
-        <form action="http://127.0.0.1:5500/home/homework-from.html" method="get">
-            <input type="submit" value="이 버튼을 누르면 인터넷이 끊깁니다."></form>
-        <form action="http://127.0.0.1:5500/home/homework-from.html" method="get" target="_blank">
-            <input type="submit" value="이 버튼을 누르면 인터넷이 끊깁니다."></form>
-
+        <textarea name="text" id="text" cols="22" rows="10">여기는 글을 쓸 수 있는 공간입니다.</textarea>
+        <p class="in"> button 적용해볼게요.</p>
+        <form action="http://127.0.0.1:5500/blog/home/homework-from.html" method="get">
+        <input type="submit" value="이 버튼을 누르면 인터넷이 끊깁니다."></form>
+        <form action="http://127.0.0.1:5500/blog/home/homework-from.html" method="get" target="_blank">
+        <input type="submit" value="이 버튼을 누르면 인터넷이 끊깁니다."></form>
     </div>
 
     <div>
-        <p>표를 만들어 볼 차례입니다.</p>
-        
+        <p class="in">표를 만들어 볼 차례입니다.</p>
+        <table>
+            <caption id="ct">일정표</caption>
+            <tr>
+                <th class="tb">시간</th>
+                <th class="tb">월요일</th>
+                <th class="tb">화요일</th>
+                <th class="tb">수요일</th>
+                <th class="tb">목요일</th>
+                <th class="tb">금요일</th>
+            </tr>
+
+            <tr>
+                <td class="tb">09:00~09:50</td>
+                <td class="tb">1교시</td>
+                <td class="tb">1교시</td>
+                <td class="tb">1교시</td>
+                <td class="tb">1교시</td>
+                <td class="tb">1교시</td>
+            </tr>
+            <tr>
+                <td class="tb">10:00~10:50</td>
+                <td class="tb">2교시</td>
+                <td class="tb">2교시</td>
+                <td class="tb">2교시</td>
+                <td class="tb">2교시</td>
+                <td class="tb">2교시</td>
+            </tr>
+            <tr>
+                <td class="tb">11:00~11:50</td>
+                <td class="tb">3교시</td>
+                <td class="tb">3교시</td>
+                <td class="tb">3교시</td>
+                <td class="tb">3교시</td>
+                <td class="tb">3교시</td>
+            </tr>
+            <tr>
+                <td class="tb">12:00~12:50</td>
+                <td class="tb">4교시</td>
+                <td class="tb">4교시</td>
+                <td class="tb">4교시</td>
+                <td class="tb">4교시</td>
+                <td class="tb">4교시</td>
+            </tr>
+        </table>
     </div>
 
 
