@@ -22,7 +22,7 @@ git add 파일명
 git add .
 git commit -m '작업내용'
 git remote origin "깃허브 주소'
-git clone origin "깃허브 주소'
+git clone "깃허브 주소'
 git push origin main 
 git pull origin main 
 git branch (브랜치목록)
