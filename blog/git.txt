@@ -26,6 +26,7 @@ git config --global user.email "Github 가입 메일"
 git remote origin "깃허브 주소'
 git clone "깃허브 주소'
 git push origin main 
+git push-f origin main(덮어쓰기)
 git pull origin main 
 git branch (브랜치목록)
 git branch '파일명' (브랜치추가)
