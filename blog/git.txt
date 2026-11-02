@@ -34,3 +34,4 @@ git checkout '브랜치명' (해당 브랜치로 브랜치 이동)
 git branch -d '브랜치명' (해당 브랜치 삭제)
 git merge '브랜치명' (현재 브랜치에 병합할 브랜치)
 git commit --amend -m '최근 커밋 메시지 바꾸기 내용'
+git reset --soft 커밋아이디 (커밋상태로 되돌림)
