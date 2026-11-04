@@ -11,6 +11,48 @@ style = head 에 들어가며 내부 css 에 해당 작은 범위일수록 힘�
 h(n) = 제목 부분으로 1~6 까지의 사이즈가 있으면 숫자가 클수록 크기가 작아진다
 p = block 요소(공간유무상관없이 줄바꿈)로서 한 문단 을 사용한다 (한줄을 모두사용)
 span = inlin 요소(공간이 부족할때만 줄바꿈)로서 한 문장 을 사용한다. (문장의 사용면적만큼만 사용)
+div = 블록요소와 인라인요소를 그룹으로 묶을때 사용 ☆ 대부분 80~90% 이친구를 사용 ☆
 br = 텍스트를 줄바꿈 할때 사용한다.
-
-
+ins = 추가할 텍스트를 만들떄 사용
+del = 삭제할 텍스트를 만들때 사용
+sub = 아래 첨자를 표시할떄 사용 
+sup = 위에 첨자를 표시할때 사용
+a = 링크를 생성할때 사용 (ex- <a href="대상의경로" target="링크연결방식" title="링크설명"></a>)
+img = 이미지를 삽일할때 사용 (ex- <img src="이미지경로" alt="이미지설명">), a태그 안에 사용가능
+strong = 내용을 강조할때 사용 (굵은글씨)
+em = 내용을 강조할때 사용 (기울어진글씨) 
+form = 폼 양식, 묶어서 전송할때 사용 (ex- <form action="서버URL" method="get or post"></form>)
+input = 입력 요소를 생성할때 사용 (ex- <input type="종류" name="이름" value="초깃값")
+    type - 상호작용요소의 종류  text, password, checkbox, radio, button, submit 등 다양함
+    name - 입력요소의 이름
+    value - 입력요소의 초기의 값
+lable = 폼 요소에 이름을 붙일때 사용 (상호작용의 요소를 넣어 편의성을 올림)
+for = label태그에서 id와 같은 속성값을 넣어 상호작용으로 사용함 (ex- <lable for="속성값",다른상호작용요소에 id="속성값")
+fieldset = 관련있는 폼 요소끼리 그룹을 지을때 사용 (네모박스안에 그룹을 넣어줌)
+legend = fieldset 으로 그룹을 지었을때 이름을 붙일때 사용
+textarea = 여러줄 입력요소를 생성 
+select = 콤보박스를 생성할때 사용
+option = 콤보박스에 항목을 하나를 추가
+optgroup = 항목 들을 그룹으로 묶음
+size = 화면에 노출되는 항목 개수를 지정
+multiple = 여러항목을 동시선택 가능
+selected = 기본선택 항목으로 지정
+button = 버튼요소를 생성 (ex- <button type="종류">내용<button>)
+disabled = 상호작용요소 비활성화할때 사용
+readonly = 상호작용요소 읽기전용으로 변경
+maxlength = 입력할 수 있는 글자 수를 제한
+checked = 요소를 선택된 상태로 표시
+placeholder = 입력값에 대한 힌트
+ul = 순서가 없는 목록을 만들때 사용
+ol = 순서가 있는 목록을 만들때 사용
+li = 목룍 내용을 표시할때 사용
+dl = 정의형 목록을 만들때 사용
+dt = 정의형 목록일때 무엇을 정의하는지 용어(이름같은것) 표시할때 사용
+dd = 정의형 목록일때 정의하는 용어를 설명할때 사용
+table = 표를 만든다
+caption = 표의 제목을 지정할때 사용
+tr = 행을 생성한다
+th = 표의 제목을 표현한다(굵은글씨)
+td = 표의 내용을 표현한다(얇은글씨)
+rowspan = 행을 합친다 (가로줄, ex- <td rowspan="n">내용</td>)
+colspan = 열을 합친다 (세로줄, ex- <td colspan="n">내용</td>)
