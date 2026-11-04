@@ -5,3 +5,30 @@
 내부 스타일 시트 = HTML 문서 내부에 style 태그로 CSS 코드를 작성
 외부 스타일 시트 = 별도의 CSS파일을 만들어 HTML 문서와 link 태그로 연결
 인라인 스타일 = 모든 태그에서 사용할 수 있는 style 속성을 사용
+content = 요소의 내용
+padding = 요소의 내부 여백
+border = 요소의 테두리
+margin = 요소의 외부 여백, 인접한 margin끼리는 큰 값으로 출력
+width = 가로사이즈 (너비)
+height = 세로사이즈 (높이)
+box-sizeing =   border-box / content-box 로 나뉨
+                border-box : width, height 속성 적용 범위를 border 영역으로 제한
+                content-box : width, height 속성 적용 범위를 content 영역으로 제한
+display =   박스의 속성을 변경 (기본:block / inline / inline-block / none )
+            none            :   표시하지 않음
+            block           :   한줄 전체를 차지, 사이즈(width, height) 적용가능, 기본적으로 같이배치X, 여백 적용 가능
+            inline          :   컨텐츠 크기만큼만 차지, 사이즈 적용X, 같은줄 옆에 나란히 배치, 여백 적용(좌/우 만 가능)
+            inline-block    :   자체적으로는 block 처럼 작동 (사이즈, 여백) 
+                                외부적으로는 inline 처럼 작동 (다른요소가 옆에 같은줄에 배치 가능)
+position = 위치 지정 (배치)
+            static : 기본 흐름 (기본값)
+            relative : 흐름대로 + 위치 조정 가능
+                        (위치기준 : 원래 자기가 있어야하는 위치)
+                
+            absolute : 흐름무시 + 위치 조정 가능
+                         (위치기준 : 위치조정이 가능한 부모요소의 시작지점 기준)
+                            부모요소 static : 기준점X
+                            부모요소 relative : 기준점O
+
+            fixed : 흐름무시 + 절대좌표 위치 지정
+            sticky : 흐름대로 + 특정 위치에 가면 fixed 처럼 고정
