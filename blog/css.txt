@@ -22,6 +22,18 @@ display =   박스의 속성을 변경 (기본:block / inline / inline-block / n
             inline          :   컨텐츠 크기만큼만 차지, 사이즈 적용X, 같은줄 옆에 나란히 배치, 여백 적용(좌/우 만 가능)
             inline-block    :   자체적으로는 block 처럼 작동 (사이즈, 여백) 
                                 외부적으로는 inline 처럼 작동 (다른요소가 옆에 같은줄에 배치 가능)
+☆많이씀☆   flex            :   요소를 플렉스 컨테이너에 넣어 자식요소들을 축 방향, 정렬을 자유롭게 제어 
+               flex-direction 속성 : 플렉스 박스 레이아웃의 주축 방향을 지정
+                  형식flex-direction:<속성값>;
+                     • row : 주축 방향을 왼쪽에서 오른쪽으로 지정 , 기본값
+                     • row-reverse : 주축 방향을 오른쪽에서 왼쪽으로 지정
+                     • column : 주축 방향을 위쪽에서 아래쪽으로 지정
+                     • column-reverse : 주축 방향을 아래쪽에서 위쪽으로 지정
+               flex-wrap 속성 : 플렉스 아이템의 자동 줄 바꿈 여부를 지정
+                  형식flex-wrap:<속성값>;
+                     ▪ nowrap : 플렉스 아이템이 플렉스 컨테이너를벗어나도무시
+                     ▪ wrap : 플렉스 아이템이 플렉스 컨테이너를벗어나면줄바꿈
+                     ▪ wrap-reverse : 플렉스 아이템이 플렉스 컨테이너를 벗어나면 wrap의 역방향으로줄바꿈
 position = 위치 지정 (배치)
             static : 기본 흐름 (기본값)
             relative : 흐름대로 + 위치 조정 가능
@@ -33,7 +45,7 @@ position = 위치 지정 (배치)
                             부모요소 relative : 기준점O
             fixed : 흐름무시 + 절대좌표 위치 지정
             sticky : 흐름대로 + 특정 위치에 가면 fixed 처럼 고정
-opacity = 투명도 설정 %
+opacity = 투명도 설정 % (불투명도 0 = 안보임)
 cursor = 마우스커서 모양 변경
 text-decoration = 내용의 밑줄 취소선 윗줄 등 장식을 작용
 margin: 0 auto;  = 블록 요소일때 나 자신을 가운데 정렬한다. (좌우 여백 margin 자동)
@@ -54,3 +66,22 @@ inline 요소 입장 -> 내가 가운데 정렬 되고 싶다 -> 자기부모 bl
             box-sizing: border-box;
         }
    </style>
+
+transition = 기존에 보유한 속성값을 변경될 값으로 전환
+   transition-property : 전환효과
+   transition-duration : 전환까지 걸리는시간
+   transition-delay    : 되돌아오는 시간
+
+      transition 속성 위치
+      기존    : 마우스 올릴때 O 내릴때 O
+      hover  : 마우스 올릴때 O 내릴떄 X
+transition-timing-function = 전환효과속도를지정
+   형식 transition-timing-function:<속성값>;
+      • 속성값
+      ▪ linear : 처음 속도와 마지막 속도가 일정
+      ▪ ease : 처음에는 속도가 점점 빨라지다가중간부터점점느려짐
+      ▪ ease-in : 처음에는 속도가 느리지만 완료될 때까지 점점 빨라짐
+      ▪ ease-out : 처음에는 속도가 빠르지만 완료될 때까지 점점 느려짐
+      ▪ ease-in-out : 처음에는 속도가 느리지만 점점 빨라지다가 다시 점점느려짐
+      • cubic-bezier(p1, p2, p3, p4) : 사용자가 정의한 속도로 진행
+   
