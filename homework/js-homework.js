@@ -135,36 +135,59 @@ console.log(apple * 5);
 let mintue = 125
 let hour = 60
 
-console.log(mintue / hour);
-console.log(mintue % hour);
-Math.floor()
+console.log(Math.floor(mintue / hour) + '시간');
+console.log(mintue % hour + '분');
+
 PART 3. 문자열 결합과 연산 순서 (21~30)
 
 
 문제 21. console.log(10 + 20 + "30"); 결과를 예상하세요.
 
+3030
+
 문제 22. console.log("10" + 20 + 30); 결과를 예상하세요.
+
+102030
 
 문제 23. console.log(10 + "20" + 30); 결과를 예상하세요.
 
+102030
+
 문제 24. console.log(10 + 20 + 30 + "원"); 결과를 예상하세요.
+
+60원
 
 문제 25. console.log("합계: " + 10 + 20); 결과를 예상하세요.
 
+합계: 1020
+
 문제 26. console.log("합계: " + (10 + 20)); 결과를 예상하세요.
+
+합계: 30
 
 문제 27. a=5, b="10"일 때 a+b와 a*b의 결과를 예상하세요.
 
+a+b = 510
+a*b = 50
+
 문제 28. "100" - 20, "100" * 2, "100" / 4의 결과를 예상하세요.
+
+80
+200
+25
 
 문제 29. 이름과 나이를 변수에 저장하고 "홍길동님의 나이는 25세입니다."를 문자열 결합으로 출력하세요.
 
+let name = '홍길동'
+let age = 25
+console.log ( name + "님의 나이는 " + age + "세입니다." );
+
 문제 30. a=10, b=20, c="30"일 때 다음 결과를 예상하세요.
 
-    a+b+c
-    c+a+b
-    a+c+b
-    a*2+c
+    a+b+c=  3030
+    c+a+b=  301020
+    a+c+b=  103020
+    a*2+c=  2030
 
 
 PART 4. 증감연산자 (31~45)
@@ -172,71 +195,131 @@ PART 4. 증감연산자 (31~45)
 
 문제 31. let a=10; a++; console.log(a); 결과를 예상하세요.
 
+11
+
 문제 32. let a=10; a--; a--; console.log(a); 결과를 예상하세요.
+
+8
 
 문제 33. let a=5; console.log(a++); console.log(a); 결과를 예상하세요.
 
+5
+6
+
 문제 34. let a=5; console.log(++a); console.log(a); 결과를 예상하세요.
+
+6
+6
 
 문제 35. let a=10; console.log(a--); console.log(a); 결과를 예상하세요.
 
+10
+9
+
 문제 36. let a=10; console.log(--a); console.log(a); 결과를 예상하세요.
+
+9
+9
 
 문제 37. let a=10; let b=a++; console.log(a,b); 결과를 예상하세요.
 
+11,10
+
 문제 38. let a=10; let b=++a; console.log(a,b); 결과를 예상하세요.
+
+11,11
 
 문제 39. let a=5, b=10; let c=a++ + b; console.log(a,b,c); 결과를 예상하세요.
 
+6, 10, 15
+
 문제 40. let a=5, b=10; let c=++a + b--; console.log(a,b,c); 결과를 예상하세요.
+
+6, 9, 16
 
 문제 41. let a=10, b=3; let c=a-- - ++b; console.log(a,b,c); 결과를 예상하세요.
 
+9, 4, 6
+
 문제 42. let x=5, y=10; x=++y - x++; console.log(x,y); 결과를 예상하세요.
+
+6, 11
 
 문제 43. let a=10, b=20; a=a++ + ++b; console.log(a,b); 결과를 예상하세요.
 
+31, 21
+
 문제 44. 
         let a=5, b=10;
-        b=a++ + --b;
-        a=++a + b--;
+        b=a++ + --b;    // a= 5 b=9
+        a=++a + b--;    // a= 7 b=14-- 
         console.log(a,b);
         결과를 예상하세요.
 
+21, 13
+
 문제 45. 
         let x=10, y=5, z=3;
-        x=++y + z--;
-        y=x-- - ++z;
-        z=x++ + y--;
+        x=++y + z--;    // x=10   y=6   z=3--  
+        y=x-- - ++z;    // x=9--  y=6   z=3
+        z=x++ + y--;    // x=8++  y=6-- z=3
         console.log(x,y,z);
         결과를 예상하세요.
 
+        9, 5, 14
 
 PART 5. 복합대입연산자 (46~55)
 
 
 문제 46. let a=10; a+=5; console.log(a); 결과를 예상하세요.
 
+15
+
 문제 47. let a=20; a-=7; console.log(a); 결과를 예상하세요.
+
+13
 
 문제 48. let a=5; a*=4; console.log(a); 결과를 예상하세요.
 
+20
+
 문제 49. let a=100; a/=4; console.log(a); 결과를 예상하세요.
+
+25
 
 문제 50. let a=17; a%=5; console.log(a); 결과를 예상하세요.
 
+2
+
 문제 51. let a=10; a+=5; a*=2; a-=8; console.log(a); 결과를 예상하세요.
 
+22
+
 문제 52. let a=100; a/=2; a+=10; a%=7; console.log(a); 결과를 예상하세요.
+
+4
 
 문제 53. 다음 코드를 복합대입연산자로 바꾸세요.
 
     let a=10;
     a=a+20; a=a*3; a=a-15; a=a/5;
 
+    a+=20   a*=3    a-+15   a/=5
+
 문제 54. 계좌 잔액 100000원에서 30000원 입금, 25000원 출금 후 잔액을 복합대입연산자로 출력하세요.
 
+let money = 100000
+money += 30000
+money -= 25000
+console.log( money );
+
 문제 55. 캐릭터 체력 100에서 30 감소, 20 회복, 15 감소 후 최종 체력을 복합대입연산자로 출력하세요.
+
+let hp = 100
+hp -= 30
+hp += 20
+hp -= 15
+console.log( hp );
 
 
 PART 6. 비교연산자 (56~65)
@@ -244,64 +327,114 @@ PART 6. 비교연산자 (56~65)
 
 문제 56. 10 == 10과 10 != 10의 결과를 예상하세요.
 
+true
+false
+
 문제 57. 10 > 5, 10 < 5, 10 >= 10, 10 <= 9의 결과를 예상하세요.
+
+true
+false
+true
+false
 
 문제 58. 10 == "10"과 10 === "10"의 결과를 예상하세요.
 
+true
+false
+
 문제 59. 20 != "20"과 20 !== "20"의 결과를 예상하세요.
+
+false
+true
 
 문제 60. a=15, b=20일 때 a>b, a<b, a==b의 결과를 예상하세요.
 
+false
+true
+false
+
 문제 61. age 변수를 선언하고 20세 이상인지 비교한 결과를 출력하세요.
 
+let age = 20
+console.log( age<=20 );
+
 문제 62. score 변수를 선언하고 60점 이상인지 비교한 결과를 출력하세요.
+
+let score
+console.log( score>=60 );
 
 문제 63. a=10, b="10", c=20일 때 다음 결과를 예상하세요.
 
     a==b; a===b; a+10==c; a+b=="1010";
 
+    true  false   true    true
+
 문제 64. 
     let a=5, b=10;
-    console.log(a++ == 5);
-    console.log(a);
-    console.log(++b == 11);
-    console.log(b);
+    console.log(a++ == 5);  // a= 5++ true
+    console.log(a);         // 6
+    console.log(++b == 11); // 11   true
+    console.log(b);         // 11
     결과를 예상하세요.  
 
 문제 65. a=100, b="100"의 값과 자료형이 모두 같은지 비교하는 코드를 작성하세요.
+
+console.log( a===b );
 
 
 PART 7. 논리연산자 (66~75)
 
 
-문제 66. 다음 && 결과를 예상하세요: true&&true, true&&false, false&&true, false&&false.
+문제 66. 다음 && 결과를 예상하세요: 
 
-문제 67. 다음 || 결과를 예상하세요: true||true, true||false, false||true, false||false.
+true&&true, true&&false, false&&true, false&&false.
+true        false        false          false
+
+
+문제 67. 다음 || 결과를 예상하세요: 
+
+true||true, true||false, false||true, false||false.
+true        true         true          false
 
 문제 68. !true, !false, !!true의 결과를 예상하세요.
 
+false, true, true
+
 문제 69. a=10, b=20일 때 a>5 && b>10의 결과를 예상하세요.
+
+true
 
 문제 70. a=10, b=20일 때 a>15 || b>15의 결과를 예상하세요.
 
+true
+
 문제 71. a=10, b=20일 때 !(a>5 && b>10)의 결과를 예상하세요.
+
+false
 
 문제 72. a=10, b=20일 때 다음 결과를 예상하세요.
 
-    a==10 && b=="20"
-    a==10 || b==="20"
+    a==10 && b=="20"    // true
+    a==10 || b==="20"   // true
 
 문제 73. age=25일 때 나이가 20세 이상이면서 30세 이하인지 확인하는 논리식을 작성하세요.
 
+let age = 25
+console.log( age >= 20 && age <= 30 );
+
 문제 74. score=75, attendance=90일 때 점수 60 이상이면서 출석률 80 이상인지 확인하세요.
+
+let score = 75
+let attendance = 90
+console.log( score >= 60 && attendance >= 80 );
 
 문제 75. a=10, b=20, c=30일 때 결과를 예상하세요.
 
-    a<b && b<c
-    a>b || c>b
-    !(a==10)
-    (a>5 && b<10) || c==30
-    !(a>5) && b>10
+    a<b && b<c                  // true
+    a>b || c>b                  // true
+    !(a==10)                    // false
+    (a>5 && b<10) || c==30      // true
+    !(a>5) && b>10              // false
 
 
 PART 8. 삼항연산자 (76~85)
@@ -309,13 +442,27 @@ PART 8. 삼항연산자 (76~85)
 
 문제 76. age=20일 때 age>=19 ? "성인" : "미성년자"의 결과를 예상하세요.
 
+let age = 20
+console.log( age >= 19 ? "성인" : "미성년자");
+
 문제 77. score=55일 때 score>=60 ? "합격" : "불합격"의 결과를 예상하세요.
+
+let score = 55
+console.log( score >= 60 ? "합격" : "불합격" );
 
 문제 78. 숫자 10이 양수인지 아닌지 삼항연산자로 판단하여 출력하세요.
 
+let number = 10
+console.log( number >= 1 ? "양수" : "양수아님" );
+
 문제 79. a=10, b=20 중 더 큰 값을 삼항연산자로 출력하세요.
 
+a=10, b=20
+console.log( a >= b ? "a가 더 큰값" : "b가 더 큰값" );
+
 문제 80. let a=10; let result=a==10 ? 100 : 200; console.log(result); 결과를 예상하세요.
+
+
 
 문제 81. let a=10, b=20; let result=a+(b>10 ? 5 : 15); 결과를 예상하세요.
 
