@@ -462,21 +462,32 @@ console.log( a >= b ? "a가 더 큰값" : "b가 더 큰값" );
 
 문제 80. let a=10; let result=a==10 ? 100 : 200; console.log(result); 결과를 예상하세요.
 
-
+100
 
 문제 81. let a=10, b=20; let result=a+(b>10 ? 5 : 15); 결과를 예상하세요.
 
+console.log(result);    // 15
+
 문제 82. num=17이 짝수인지 홀수인지 삼항연산자로 출력하세요.
 
+let num = 17
+console.log( num % 2 === 0 ? "짝수":"홀수");
+
 문제 83. price=25000일 때 30000원 이상이면 "무료배송", 아니면 "배송비 발생"을 출력하세요.
+
+let price = 25000
+console.log( price >= 30000 ? "무료배송":"배송비 발생");
 
 문제 84. score=85일 때 다음 결과를 예상하세요.
 
     score>=90 ? "A" : score>=80 ? "B" : "C"
 
+    B
+
 문제 85. a=10, b=20일 때 다음 결과를 예상하세요.
 
     a>b ? a+5 : b+5
+25
 
 
 PART 9. 자료형 변환 (86~95)
@@ -484,28 +495,52 @@ PART 9. 자료형 변환 (86~95)
 
 문제 86. Number("100")의 결과를 예상하세요.
 
+100
+
 문제 87. String(100)의 결과를 예상하세요.
+
+"100"
 
 문제 88. 10 + "20"의 결과를 예상하세요.
 
+1020
+
 문제 89. 10 + Number("20")의 결과를 예상하세요.
+
+30
 
 문제 90. String(10) + 20의 결과를 예상하세요.
 
+1020
+
 문제 91. a="100", b="200"일 때 a+b와 Number(a)+Number(b)의 결과를 예상하세요.
+
+a+b                 =   100200
+Number(a)+Number(b) =   300  
 
 문제 92. a=10, b="20", c=30일 때 a+b+c와 a+Number(b)+c의 결과를 예상하세요.
 
+a+b+c           =   102030
+a+Number(b)+c   =   60
+
 문제 93. Number("3.14") + 2와 String(100) + String(200)의 결과를 예상하세요.
+
+Number("3.14") + 2          =   5.14   
+String(100) + String(200)   =   100200
 
 문제 94. a="50", b=20일 때 a+b, Number(a)-b, Number(a)*b, Number(a)/b의 결과를 예상하세요.
 
+a+b         =   5020
+Number(a)-b =   30
+Number(a)*b =   1000
+Number(a)/b =   2.5
+
 문제 95. a="10", b=20, c="30"일 때 결과를 예상하세요.
 
-    a+b+c
-    Number(a)+b+Number(c)
-    String(b)+a
-    Number(a+b)
+    a+b+c                   =   102030
+    Number(a)+b+Number(c)   =   60
+    String(b)+a             =   2010
+    Number(a+b)             =   1020
 
 
 PART 10. 종합 응용 문제 (96~100)
@@ -518,12 +553,32 @@ PART 10. 종합 응용 문제 (96~100)
     3) 50000원 이상인지 비교 
     4) 삼항연산자로 "고액 주문"/"일반 주문" 출력
 
+    let money = 15000;
+    let count = 3;
+    let delivery = 3000;
+
+    1) console.log( "상품 총금액 :" + money * count);
+    2) console.log( "상품 총금액 :" + (money * count + delivery));
+    3) console.log( "상품 총금액 :" + (money * count + delivery) >= 50000);
+    4) console.log( "상품 총금액 :" + (money * count + delivery) >= 50000 ? "고액 주문" : "일반 주문");
+
 문제 97. 시험 점수: 국어 85, 영어 90, 수학 75.
 
     1) 총점 계산 
     2) 평균 계산
     3) 평균 80 이상인지 비교
     4) 삼항연산자로 "우수"/"보통" 출력
+
+    let testScore1 = 85;
+    let testScore2 = 90;
+    let testScore3 = 75;
+    let total = testScore1 + testScore2 + testScore3;
+
+    1) console.log( "총점 :" + total);
+    2) console.log( "평균 :" + total/3);
+    3) console.log( total/3 >= 80);
+    4) console.log( total/3 >= 80 ? "우수" : "보통");
+
 
 문제 98. 은행 계좌: 초기 잔액 100000원.
 
@@ -535,6 +590,17 @@ PART 10. 종합 응용 문제 (96~100)
     6) 잔액 100000원 이상인지 비교 
     7) "잔액 충분"/"잔액 부족" 출력
     
+    let account = 100000;
+
+    1) console.log( account = account + 50000 );
+    2) console.log( account = account - 30000 );
+    3) console.log( account = account - 20000 );
+    4) //console.log( account += 50000 ); console.log( account -= 30000 ); console.log( account -= 20000 );
+    5) console.log( account );
+    6) console.log( account >= 100000 );
+    7) console.log( account >= 100000 ? "잔액 충분" : "잔액 부족");
+
+
 문제 99. 놀이공원: age=15, height=155, withParent=true.
 입장 조건: 나이 14세 이상이고 키 150cm 이상이거나, 14세 미만이라도 보호자 동반이고 키 150cm 이상이면 입장 가능.
 
@@ -543,27 +609,46 @@ PART 10. 종합 응용 문제 (96~100)
     3) 삼항연산자로 "입장 가능"/"입장 불가" 출력
     4) 나이를 12로 변경해 재확인 5) 보호자 동반을 false로 변경해 재확인
 
+    
+
+    1) console.log( age >= 14 || withParent && height >= 150 );
+    2) let pass = age >= 14 || withParent && height >= 150
+    3) let guest = pass ? "입장 가능" : "입장 불가");
+    
+    4)  age = 12
+        pass = age >= 14 || withParent && height >= 150
+        guest = pass ? "입장 가능" : "입장 불가";
+        console.log(guest)
+
+        withParent = false;
+        pass = age >= 14 || withParent && height >= 150
+        guest = pass ? "입장 가능" : "입장 불가";
+        console.log(guest)
+
+
+
 문제 100. 다음 코드의 모든 출력 결과를 예상하고 이유를 설명하세요.
 
 let a = 10;
 let b = 20;
 let c = "30";
-a += 5;
-b--;
-a = ++b + a--;
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(a + b + c);
-console.log(a + Number(c) + b);
-console.log(a > b);
-console.log(a == "35");
-console.log(a === "35");
-let result1 = a > b && Number(c) > 20;
-let result2 = a < b || c == 30;
-console.log(result1);
-console.log(result2);
-let result3 = result1 ? a + b : a - b;
-console.log(result3);
+a += 5;                                     // a = 15
+b--;                                        // b = 20 --
+a = ++b + a--;                              // a = 20 + 15 --
+console.log(a);                             // 35
+console.log(b);                             // 20
+console.log(c);                             // 30
+console.log(a + b + c);                     // 35 + 20 + "30" = 5530
+console.log(a + Number(c) + b);             // 35 + 30 + 20 = 85
+console.log(a > b);                         // 35 > 20 = ture
+console.log(a == "35");                     // 35 == "35" = ture
+console.log(a === "35");                    // 35 === "35" = flase
+let result1 = a > b && Number(c) > 20;      // (35 > 20 = true) && (30 > 20 = true) = result1 = true
+let result2 = a < b || c == 30;             // (35 < 20 = flase) || ("30" == 30 = true) = result2 = true 
+console.log(result1);                       // true
+console.log(result2);                       // true
+let result3 = result1 ? a + b : a - b;      // true = true ?  true = ( 35 + 20 ) :  false = ( 35 - 20 ) =  true = 55
+console.log(result3);                       // 55
+
 요구사항: 1) 출력 순서 2) 변수 변화 3) 전위/후위 증감 순서
 4) 문자열 결합과 숫자 덧셈 구분 5) 비교·논리 결과 6) 삼항 선택 이유
