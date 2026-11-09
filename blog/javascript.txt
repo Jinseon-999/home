@@ -11,3 +11,33 @@ let const : 주로 씀
 상수 const  : 한번 할당/저장 하면 값이 바뀌지 않는다
 
 변수명 숫자시작불가, $ _ 이외에 특수문자 불가, 띄어쓰기 불가, 예약어(키워드) 불가
+
+조건식 = 최종적으로 true false 논리형 결과
+
+if문 = 값이 참이면 실행 
+    if() if() if() .. 반복 사용가능
+    if else if else if else if ... 반복 사용가능
+    if else if else if ... else   
+    else 혼자 사용 X
+    else if 혼자 사용 X
+    if else else 사용 X
+
+switch = (비교하려는대상){ case 1 :         console.log('csae 1'); ... break; 
+                      or default:    [ // else ]     console.log('csae 6');}
+    switch 방식은 break; 를 걸어줘야하고 그렇지 않으면 그 마지막 default코드를 사용하거나 끝날때까지 실행한다
+
+for문 = 반복된 값을 실행
+        1    2 true/false  4       
+    for(초기화식; 조건식; 증감식){
+        3
+        실행문;}
+        1.(처음 값 고정) -> {2. true (실행) -> 3. 실행문 4. 증가or감소} -> false 가 될때까지 
+
+함수 (function) = 동작, 기능을 나타낸 코드 뭉치
+    function 함수명 (매개변수) {
+        실행코드;
+        실행코드;
+        return 리턴값;}
+    옵션
+    매개변수 O X
+    return  O X
